@@ -1,0 +1,40 @@
+<div class="container">
+  <div class="row">
+
+
+    <div class="col-md-4 col-md-offset-2 text-center">
+      <div class="panel panel-success">
+        <div class="panel-heading">
+          <h3 class="panel-title">Paper</h3>
+        </div>
+
+        <div class="panel-body">
+          <img class="img-responsive" src="../assets/images/paper.png">
+        </div>
+      </div>
+    </div>
+
+    <div class="col-md-4 text-center">
+      <div class="panel panel-danger">
+        <div class="panel-heading">
+          <h3 class="panel-title"><%= @comp_play.capitalize %></h3>
+        </div>
+
+        <div class="panel-body">
+          <img class="img-responsive" src="../assets/images/<%= @comp_play %>.png">
+        </div>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<div class="well text-center">
+  <h1>
+
+    <span class="<%= @btn_style %>">
+      <%= @result %>
+    </span>
+
+  </h1>
+</div>

@@ -5,10 +5,51 @@
   <%= stylesheet_link_tag    'application', media: 'all' %>
   <%= javascript_include_tag 'application' %>
   <%= csrf_meta_tags %>
+
+  <link rel="stylesheet" type="text/css" href="../assets/css/bootstrap.css">
+
+  <style>
+
+    a {
+      color: white;
+      }
+
+  </style>
+
 </head>
 <body>
 
+  <div class="container">
+    <hr>
+
+    <div class="row">
+      <div class="col-md-8 col-md-offset-2">
+        <div class="btn-group btn-group-justified" role="group">
+
+          <div class="btn-group" role ="group">
+            <button type="button" class="btn btn-primary">
+              <a href="/rock">Play Rock</a></button>
+          </div>
+
+          <div class="btn-group" role ="group">
+            <button type="button" class="btn btn-info">
+              <a href="/paper">Play Paper</a></button>
+          </div>
+
+          <div class="btn-group" role ="group">
+            <button type="button" class="btn btn-primary">
+              <a href="/scissors">Play Scissors</a></button>
+          </div>
+
+        </div>
+      </ul>
+    </div>
+</div>
+<hr>
+
 <%= yield %>
 
-</body>
-</html>
+</div>
+
+      </body>
+      </html>
